@@ -1,4 +1,6 @@
 import { Photo } from '../../apiService/image-api.types';
+
+
 export interface SelectedImage {
   imageUrl: string;
   altDescription: string;

@@ -1,10 +1,12 @@
-import React from 'react';
 import Modal, { Styles } from 'react-modal';
 import { AiFillLike } from 'react-icons/ai';
+
 import css from './ImageModal.module.css';
 import { ImageModalProps } from './ImageModal.types';
 
+
 Modal.setAppElement('#root');
+
 
 const customStyles: Styles = {
   content: {

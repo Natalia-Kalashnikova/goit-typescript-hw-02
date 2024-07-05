@@ -1,9 +1,10 @@
-import React from 'react';
 import { Field, Form, Formik, FormikHelpers } from 'formik';
 import { toast, Toaster } from 'react-hot-toast';
 import { AiOutlineSearch } from "react-icons/ai";
+
 import css from './SearchBar.module.css';
 import { SearchBarProps, FormValues } from './SearchBar.types';
+
 
 const SearchBar: React.FC<SearchBarProps> = ({ onSubmit }) => {
   return (

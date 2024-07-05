@@ -1,14 +1,17 @@
 import React, { useState, useEffect } from 'react';
 import { toast } from 'react-hot-toast';
+
 import fetchImages from '../../apiService/image-api';
+import { SelectedImage, ImageResponse } from './App.types';
+import { Photo } from '../../apiService/image-api.types';
+
 import SearchBar from '../SearchBar/SearchBar';
 import Loader from '../Loader/Loader';
 import ImageGallery from '../ImageGallery/ImageGallery';
 import ImageModal from '../ImageModal/ImageModal';
 import LoadMoreBtn from '../LoadMoreBtn/LoadMoreBtn';
 import ErrorMessage from '../ErrorMessage/ErrorMessage';
-import { SelectedImage, ImageResponse } from './App.types';
-import { Photo } from '../../apiService/image-api.types';
+
 
 const App: React.FC = () => {
   const [images, setImages] = useState<Photo[]>([]);
