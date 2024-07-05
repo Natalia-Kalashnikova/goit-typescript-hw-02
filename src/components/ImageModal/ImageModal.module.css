@@ -13,9 +13,9 @@
   gap: 10px;
 }
 
-.modalOpen {
+/* .modalOpen {
   overflow: hidden;
-}
+} */
 
 .Overlay {
   position: fixed;
